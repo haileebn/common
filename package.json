@@ -1,5 +1,5 @@
 {
-  "name": "commons",
+  "name": "hainv-commons",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -11,5 +11,13 @@
   "engines": {
     "node": ">=10.18.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haileebn/hainv-common.git"
+  },
+  "bugs": {
+    "url": "https://github.com/haileebn/hainv-common/issues"
+  },
+  "homepage": "https://github.com/haileebn/hainv-common#readme",
   "description": ""
 }

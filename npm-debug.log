@@ -1,0 +1,103 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.3
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'D:\\code\\git\\commons',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\hainv\AppData\Roaming\npm-cache\commons\1.0.0\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\hainv\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle commons@1.0.0~prepublish: commons@1.0.0
+11 silly lifecycle commons@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\hainv\\AppData\\Roaming\\npm-cache\\commons\\1.0.0\\package.tgz',
+12 verbose tar pack   'D:\\code\\git\\commons' ]
+13 verbose tarball C:\Users\hainv\AppData\Roaming\npm-cache\commons\1.0.0\package.tgz
+14 verbose folder D:\code\git\commons
+15 verbose addLocalTarball adding from inside cache C:\Users\hainv\AppData\Roaming\npm-cache\commons\1.0.0\package.tgz
+16 verbose correctMkdir C:\Users\hainv\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd commons@1.0.0
+18 verbose afterAdd C:\Users\hainv\AppData\Roaming\npm-cache\commons\1.0.0\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\hainv\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\hainv\AppData\Roaming\npm-cache\commons\1.0.0\package\package.json written
+21 silly publish { name: 'commons',
+21 silly publish   version: '1.0.0',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   keywords: [],
+21 silly publish   author: '',
+21 silly publish   license: 'ISC',
+21 silly publish   engines: { node: '>=10.18.0' },
+21 silly publish   description: '',
+21 silly publish   gitHead: '1a04ffc183b4fe53894666b832e12d6c8ea07f90',
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   _id: 'commons@1.0.0',
+21 silly publish   _shasum: '479ff77512e74c79340e290938aa955bbd2c5560',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name commons
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'commons',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'commons',
+26 silly mapToRegistry   name: 'commons',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/commons
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading C:\Users\hainv\AppData\Roaming\npm-cache\commons\1.0.0\package.tgz
+30 verbose request uri https://registry.npmjs.org/commons
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 11:19:30 AM
+33 verbose request using bearer token for auth
+34 verbose request id 0a2280d8a4280985
+35 http request PUT https://registry.npmjs.org/commons
+36 http 403 https://registry.npmjs.org/commons
+37 verbose headers { date: 'Mon, 01 Mar 2021 04:19:30 GMT',
+37 verbose headers   'content-type': 'application/json',
+37 verbose headers   'transfer-encoding': 'chunked',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'set-cookie': [ '__cfduid=dbd86010f4bc2ca3fda83d667fcdc97c41614572369; expires=Wed, 31-Mar-21 04:19:29 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+37 verbose headers   'cf-ray': '628f965e0b2dc969-HAN',
+37 verbose headers   'cf-cache-status': 'DYNAMIC',
+37 verbose headers   'cf-request-id': '088d9c4ec80000c969d091a000000001',
+37 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+37 verbose headers   vary: 'Accept-Encoding',
+37 verbose headers   server: 'cloudflare',
+37 verbose headers   'content-encoding': 'gzip' }
+38 verbose request invalidating C:\Users\hainv\AppData\Roaming\npm-cache\registry.npmjs.org\commons on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: You do not have permission to publish "commons". Are you logged in as the correct user? : commons
+40 verbose stack     at makeError (C:\Users\hainv\AppData\Roaming\nvm\v6.11.3\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (C:\Users\hainv\AppData\Roaming\nvm\v6.11.3\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
+40 verbose stack     at C:\Users\hainv\AppData\Roaming\nvm\v6.11.3\node_modules\npm\node_modules\npm-registry-client\lib\request.js:216:7
+40 verbose stack     at Gunzip.onEnd (zlib.js:227:5)
+40 verbose stack     at emitNone (events.js:91:20)
+40 verbose stack     at Gunzip.emit (events.js:185:7)
+40 verbose stack     at endReadableNT (_stream_readable.js:974:12)
+40 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:80:11)
+40 verbose stack     at process._tickCallback (internal/process/next_tick.js:104:9)
+41 verbose statusCode 403
+42 verbose pkgid commons
+43 verbose cwd D:\code\git\commons
+44 error Windows_NT 10.0.18363
+45 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error node v6.11.3
+47 error npm  v3.10.10
+48 error code E403
+49 error You do not have permission to publish "commons". Are you logged in as the correct user? : commons
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
